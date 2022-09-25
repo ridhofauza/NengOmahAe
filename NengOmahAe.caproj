@@ -1,0 +1,1349 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>NengOmahAe</name>
+    <description>EdukasiCovid19Kuduiso</description>
+    <version>1.0.0.1</version>
+    <author>kuduiso</author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.kuduiso.myapp</app-id>
+    <unique-id>kpslhknkury5</unique-id>
+    <saved-with-version>27700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1136</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Firefox</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="set3_background" sid="251755949525209">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="761043265738135" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\BelajarGAME\Platformer\Abstract Platformer\PNG\Backgrounds\set3_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stand" sid="301589311946288">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="objek" sid="865948955518923" type="number" />
+                <instance-variable name="posX" sid="637914832405643" type="number" />
+                <instance-variable name="posY" sid="992835578350085" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="642557784792381">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="973139497323978">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="961955686153051">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357615560411494" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\stand.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.939344" />
+                            <point x="0.0025" y="0.940983" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="947934926907627" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\jl1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.939344" />
+                            <point x="0.0025" y="0.940983" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500838" original-source="D:\BelajarGAME\proOne\jl2.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.939344" />
+                            <point x="0.0025" y="0.940983" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\jl3.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.939344" />
+                            <point x="0.0025" y="0.940983" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\jl4.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.939344" />
+                            <point x="0.0025" y="0.940983" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\jl5.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.939344" />
+                            <point x="0.0025" y="0.940983" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501253" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\jl6.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.939344" />
+                            <point x="0.0025" y="0.940983" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="147543773752451">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="748381931732504">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\BelajarGAME\proOne\tiles\tileGrey.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="337604892147531">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="421653349142931">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\BelajarGAME\proOne\tiles\tileGrey1.png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="660812310686924">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="612684525803039">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\BelajarGAME\proOne\tiles\tileGrey3.png" />
+        </object-type>
+        <object-type name="tileGrey" sid="209656143850050">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="461710687689314">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="546935510575137" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\tiles\tileGrey4.png">
+                        <collision-poly>
+                            <point x="0.0564516" y="0.0555556" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0685484" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502008" hotspotY="0.501976" original-source="D:\BelajarGAME\proOne\tiles\tileGrey5.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.497992" y="0" />
+                            <point x="0.943775" y="0.055336" />
+                            <point x="0.931727" y="0.498024" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGrey2" sid="645747951867407">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="952048624063262" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\tiles\tileGrey4.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.943548" y="0.0555556" />
+                            <point x="0.931452" y="0.5" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502008" hotspotY="0.501976" original-source="D:\BelajarGAME\proOne\tiles\tileGrey5.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.497992" y="0" />
+                            <point x="0.943775" y="0.055336" />
+                            <point x="0.931727" y="0.498024" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGrey3" sid="933239769713640">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="724181103774441">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475182913767969" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\tiles\tileGrey4.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.943548" y="0.0555556" />
+                            <point x="0.931452" y="0.5" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\tiles\tileGrey5.png">
+                        <collision-poly>
+                            <point x="0.0564516" y="0.0555556" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0685484" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="background" sid="139203011933413">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="265783399712073" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\BelajarGAME\proOne\Background\background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="awan" sid="849649295480595">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="530472844000226" speed="5">
+                    <frame duration="1" hotspotX="0.500439" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\Background\awan.png">
+                        <collision-poly>
+                            <point x="0.0421422" y="0.125" />
+                            <point x="0.9482" y="0.153646" />
+                            <point x="0.992098" y="0.5" />
+                            <point x="0.76734" y="0.309896" />
+                            <point x="0.499561" y="0.424479" />
+                            <point x="0.1036" y="0.692708" />
+                            <point x="0.910448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rumah" sid="657888840324430">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="227708148962123" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501511" original-source="D:\BelajarGAME\proOne\Background\rumah.png">
+                        <collision-poly>
+                            <point x="0.0564374" y="0.193353" />
+                            <point x="0.5" y="0.305136" />
+                            <point x="0.941799" y="0.199396" />
+                            <point x="0.977072" y="0.498489" />
+                            <point x="0.996473" y="0.987915" />
+                            <point x="0.0026455" y="0.990937" />
+                            <point x="0.0229277" y="0.498489" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rumah2" sid="650459670173481">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="397716843837244" speed="5">
+                    <frame duration="1" hotspotX="0.50027" hotspotY="0.502128" original-source="D:\BelajarGAME\proOne\Background\rumah22.png">
+                        <collision-poly>
+                            <point x="0.0226904" y="0.178723" />
+                            <point x="0.49973" y="0.378723" />
+                            <point x="0.976769" y="0.182979" />
+                            <point x="0.997839" y="0.497872" />
+                            <point x="0.997839" y="0.982979" />
+                            <point x="0.49973" y="0.995745" />
+                            <point x="0.00540249" y="0.957447" />
+                            <point x="0.00540249" y="0.497872" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="covid2" sid="852315186533283">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="894609066137007">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="958563905237983" speed="5">
+                    <frame duration="1" hotspotX="0.503356" hotspotY="1" original-source="D:\BelajarGAME\proOne\objek\covid19.png">
+                        <collision-poly>
+                            <point x="0.214765" y="0.266667" />
+                            <point x="0.322147" y="0.06" />
+                            <point x="0.778523" y="0.226667" />
+                            <point x="0.852349" y="0.346667" />
+                            <point x="0.741611" y="0.626667" />
+                            <point x="0.592282" y="0.765" />
+                            <point x="0.261745" y="0.663333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="covid5" sid="986345312537527">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="782221617661321">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="702633004392349">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565996361557386" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="D:\BelajarGAME\proOne\objek\covid19-2.png">
+                        <collision-poly>
+                            <point x="0.333334" y="0.268456" />
+                            <point x="0.513333" y="0.214765" />
+                            <point x="0.706666" y="0.315436" />
+                            <point x="0.793333" y="0.496644" />
+                            <point x="0.7" y="0.711409" />
+                            <point x="0.486667" y="0.778523" />
+                            <point x="0.313334" y="0.677853" />
+                            <point x="0.266667" y="0.456375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sabun" sid="517907369468167">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690376793420329" speed="5">
+                    <frame duration="1" hotspotX="0.50173" hotspotY="0.502146" original-source="D:\BelajarGAME\proOne\objek\sabun.png">
+                        <collision-poly>
+                            <point x="0.0968858" y="0.120172" />
+                            <point x="0.49827" y="0.00858369" />
+                            <point x="0.941176" y="0.0729614" />
+                            <point x="0.99654" y="0.497854" />
+                            <point x="0.903114" y="0.879828" />
+                            <point x="0.49827" y="1" />
+                            <point x="0.0899654" y="0.888412" />
+                            <point x="0.017301" y="0.497854" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="masker2" sid="933569704211326">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="586124913160596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\objek\masker2.png">
+                        <collision-poly>
+                            <point x="0.0391304" y="0.0692308" />
+                            <point x="0.5" y="0.338462" />
+                            <point x="0.956522" y="0.0769231" />
+                            <point x="0.986957" y="0.5" />
+                            <point x="0.891304" y="0.807692" />
+                            <point x="0.5" y="1" />
+                            <point x="0.108696" y="0.807692" />
+                            <point x="0.00869565" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="handSanitizer" sid="393505649641396">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="183737187808276" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="D:\BelajarGAME\proOne\objek\handSanitizer.png">
+                        <collision-poly>
+                            <point x="0.0775862" y="0.04" />
+                            <point x="0.5" y="0" />
+                            <point x="0.62931" y="0.191111" />
+                            <point x="1" y="0.497778" />
+                            <point x="0.956897" y="0.977778" />
+                            <point x="0.5" y="0.995556" />
+                            <point x="0.0431034" y="0.977778" />
+                            <point x="0.00862069" y="0.497778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="135417005343816">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="1" name="gun" pingpong="0" repeatcount="1" repeatto="0" sid="579928900907103" speed="10">
+                    <frame duration="1" hotspotX="0.50108" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\Gun\gun1.png">
+                        <collision-poly>
+                            <point x="0" y="0.387324" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.619719" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501124" hotspotY="0.503876" original-source="D:\BelajarGAME\proOne\Gun\gun2.png">
+                        <collision-poly>
+                            <point x="0" y="0.387324" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.619719" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\Gun\gun3.png">
+                        <collision-poly>
+                            <point x="0" y="0.387324" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.619719" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501362" hotspotY="0.506329" original-source="D:\BelajarGAME\proOne\Gun\gun4.png">
+                        <collision-poly>
+                            <point x="0" y="0.387324" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.619719" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\Gun\gun5.png">
+                        <collision-poly>
+                            <point x="0" y="0.387324" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.619719" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\Gun\gun6.png">
+                        <collision-poly>
+                            <point x="0" y="0.387324" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.619719" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="561469347608771">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="kotak" sid="498777449029071">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502161746930622" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\objek\kotak.png">
+                        <collision-poly>
+                            <point x="0.032967" y="0.032967" />
+                            <point x="0.5" y="0" />
+                            <point x="0.967033" y="0.032967" />
+                            <point x="1" y="0.5" />
+                            <point x="0.972527" y="0.972527" />
+                            <point x="0.5" y="1" />
+                            <point x="0.032967" y="0.967033" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kt_handSanitizer" sid="580520854956680">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323236356837796" speed="0">
+                    <frame duration="1" hotspotX="0.502732" hotspotY="0.502732" original-source="D:\BelajarGAME\proOne\objek\kotak_tanya.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\objek\kt_handSanitizer.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kt_masker" sid="820965107232609">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301034937946339" speed="0">
+                    <frame duration="1" hotspotX="0.502732" hotspotY="0.502732" original-source="D:\BelajarGAME\proOne\objek\kotak_tanya.png" />
+                    <frame duration="1" hotspotX="0.502732" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\objek\kt_masker.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kt_sabun" sid="472432727414936">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378014570524271" speed="0">
+                    <frame duration="1" hotspotX="0.502732" hotspotY="0.502732" original-source="D:\BelajarGAME\proOne\objek\kotak_tanya.png" />
+                    <frame duration="1" hotspotX="0.502732" hotspotY="0.502732" original-source="D:\BelajarGAME\proOne\objek\kt_sabun.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_left" sid="861997159623447">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="615899033835641" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\Platformer\Control\flatLight\flatLight22.png">
+                        <collision-poly>
+                            <point x="0.158537" y="0.158537" />
+                            <point x="0.5" y="0.0121951" />
+                            <point x="0.841463" y="0.158537" />
+                            <point x="0.987805" y="0.5" />
+                            <point x="0.841463" y="0.841463" />
+                            <point x="0.5" y="0.987805" />
+                            <point x="0.158537" y="0.841463" />
+                            <point x="0.0121951" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_up" sid="337419160543949">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="289889772417434" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\Platformer\Control\flatLight\flatLight24.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_jump" sid="526323582355011">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508938332411328" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\jump.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_right" sid="186218346024481">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="631257652835195" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\Platformer\Control\flatLight\flatLight23.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_attack" sid="406456305228032">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628932160558282" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\attack.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="991916784867539">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="window" sid="781711337703455">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="362538285972308" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\window.png">
+                        <collision-poly>
+                            <point x="0.0307508" y="0.04375" />
+                            <point x="0.5" y="0.0284091" />
+                            <point x="0.969649" y="0.0431818" />
+                            <point x="0.969649" y="0.956818" />
+                            <point x="0.5" y="0.971591" />
+                            <point x="0.0307508" y="0.95625" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="596320888257528">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="115410010545070" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgg" sid="704696776045207">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="683686456518992" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\asset_gratis\bgg.png">
+                        <collision-poly>
+                            <point x="0.476563" y="0.476563" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.921875" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.078125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gedung3" sid="128744794428674">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166774760188076" speed="5">
+                    <frame duration="1" hotspotX="0.500248" hotspotY="0.500942" original-source="D:\BelajarGAME\proOne\Background\gedung3.png">
+                        <collision-poly>
+                            <point x="0.106309" y="0.403013" />
+                            <point x="0.499752" y="0.118644" />
+                            <point x="0.972678" y="0.103578" />
+                            <point x="1" y="0.499058" />
+                            <point x="0.999503" y="0.998117" />
+                            <point x="0" y="1" />
+                            <point x="0.0119225" y="0.499058" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="background2" sid="667302195441398">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="361070376787068" speed="5">
+                    <frame duration="1" hotspotX="0.500441" hotspotY="0.500782" original-source="D:\BelajarGAME\proOne\Background\background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home" sid="845433409200359">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121597874533507" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\objek\home1.png">
+                        <collision-poly>
+                            <point x="0.173585" y="0.223572" />
+                            <point x="0.5" y="0.00121507" />
+                            <point x="0.831132" y="0.217497" />
+                            <point x="0.984906" y="0.499392" />
+                            <point x="0.916038" y="0.891859" />
+                            <point x="0.5" y="0.996355" />
+                            <point x="0.0877358" y="0.886999" />
+                            <point x="0.0216981" y="0.499392" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\objek\home2.png">
+                        <collision-poly>
+                            <point x="0.173585" y="0.223572" />
+                            <point x="0.5" y="0.00121507" />
+                            <point x="0.831132" y="0.217497" />
+                            <point x="0.984906" y="0.499392" />
+                            <point x="0.916038" y="0.891859" />
+                            <point x="0.5" y="0.996355" />
+                            <point x="0.0877358" y="0.886999" />
+                            <point x="0.0216981" y="0.499392" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="heart" sid="917168012020113">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="999437147243311" speed="5">
+                    <frame duration="1" hotspotX="0.501961" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\objek\heart.png">
+                        <collision-poly>
+                            <point x="0.0862745" y="0.0990991" />
+                            <point x="0.498039" y="0.0495495" />
+                            <point x="0.917647" y="0.0945946" />
+                            <point x="0.976471" y="0.5" />
+                            <point x="0.784314" y="0.752252" />
+                            <point x="0.498039" y="0.995495" />
+                            <point x="0.219608" y="0.747748" />
+                            <point x="0.0196078" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Kuis" sid="100075976023142">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="358947829762004" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\Kuis.png">
+                        <collision-poly>
+                            <point x="0.077476" y="0.101891" />
+                            <point x="0.5" y="0" />
+                            <point x="0.922524" y="0.101891" />
+                            <point x="0.980032" y="0.5" />
+                            <point x="0.969249" y="0.959559" />
+                            <point x="0.5" y="0.97374" />
+                            <point x="0.0303514" y="0.960084" />
+                            <point x="0.0195687" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PIL_A" sid="650648693153325">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367359179879219" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\A1.png">
+                        <collision-poly>
+                            <point x="0.0583333" y="0.0583333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.941667" y="0.0583333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.941667" y="0.941667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0583333" y="0.941667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\A.png">
+                        <collision-poly>
+                            <point x="0.0583333" y="0.0583333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.941667" y="0.0583333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.941667" y="0.941667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0583333" y="0.941667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PIL_B" sid="280875040089259">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="971787149073450" speed="5">
+                    <frame duration="1" hotspotX="0.500832" hotspotY="0.500832" original-source="D:\BelajarGAME\proOne\GUI\B1.png">
+                        <collision-poly>
+                            <point x="0.0582363" y="0.0582363" />
+                            <point x="0.499168" y="0" />
+                            <point x="0.9401" y="0.0599002" />
+                            <point x="0.998336" y="0.499168" />
+                            <point x="0.9401" y="0.9401" />
+                            <point x="0.499168" y="0.998336" />
+                            <point x="0.0599002" y="0.9401" />
+                            <point x="0" y="0.499168" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\B.png">
+                        <collision-poly>
+                            <point x="0.0583333" y="0.0583333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.941667" y="0.0583333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.941667" y="0.941667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0583333" y="0.941667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="674841592281842">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="covid6" sid="266523146261478">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="766027538678581" speed="5">
+                    <frame duration="1" hotspotX="0.501845" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\objek\covid19-4.png">
+                        <collision-poly>
+                            <point x="0.184502" y="0.185185" />
+                            <point x="0.498155" y="0.0148148" />
+                            <point x="0.811808" y="0.188889" />
+                            <point x="0.97786" y="0.5" />
+                            <point x="0.811808" y="0.811111" />
+                            <point x="0.498155" y="0.977778" />
+                            <point x="0.184502" y="0.814815" />
+                            <point x="0.0184502" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="364582664696127">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SpriteFont" sid="454369277434056">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="type" sid="614216762520474" type="string" />
+            </instance-variables>
+            <texture original-source="D:\BelajarGAME\proOne\Font\SpriteFont_Coolvetica_Regular_(48)_[0,0,0,0]_49x55.png" />
+        </object-type>
+        <object-type name="tileGrey4" sid="249332578543392">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="994521581871312">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="362209434098870" speed="0">
+                    <frame duration="1" hotspotX="0.50193" hotspotY="0.501961" original-source="D:\BelajarGAME\proOne\tiles\tileGrey13.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\tiles\tileGrey14.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="covidFly" sid="749554687108111">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="440984868368068">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="459488081932660">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753011939695116" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="D:\BelajarGAME\proOne\objek\covid19-2.png">
+                        <collision-poly>
+                            <point x="0.186667" y="0.187919" />
+                            <point x="0.5" y="0.0201342" />
+                            <point x="0.813333" y="0.187919" />
+                            <point x="0.973333" y="0.496644" />
+                            <point x="0.806667" y="0.805369" />
+                            <point x="0.5" y="0.973154" />
+                            <point x="0.186667" y="0.812081" />
+                            <point x="0.02" y="0.496644" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="berhasil" sid="556264058124976">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627263073180540" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\berhasil.png">
+                        <collision-poly>
+                            <point x="0.0778754" y="0.102416" />
+                            <point x="0.5" y="0" />
+                            <point x="0.922125" y="0.102416" />
+                            <point x="0.980032" y="0.5" />
+                            <point x="0.969249" y="0.959559" />
+                            <point x="0.5" y="0.974265" />
+                            <point x="0.0303514" y="0.960084" />
+                            <point x="0.0195687" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500263" original-source="D:\BelajarGAME\proOne\GUI\terinfeksi.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_next" sid="739552313681931">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708787387040690" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\NEXT1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\btn_next.png">
+                        <collision-poly>
+                            <point x="0.0146341" y="0.04" />
+                            <point x="0.5" y="0" />
+                            <point x="0.985366" y="0.04" />
+                            <point x="1" y="0.5" />
+                            <point x="0.985366" y="0.96" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0146341" y="0.96" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gejKlinis" sid="876820129572714">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="295657148424726" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\ext\gejKlinis1.png">
+                        <collision-poly>
+                            <point x="0.0120226" y="0.035124" />
+                            <point x="0.5" y="0" />
+                            <point x="0.988685" y="0.0330578" />
+                            <point x="0.988685" y="0.966942" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0113154" y="0.966942" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\ext\cegah.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="restart" sid="981956464644437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938877675567353" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\restart1.png">
+                        <collision-poly>
+                            <point x="0.0146341" y="0.04" />
+                            <point x="0.5" y="0" />
+                            <point x="0.985366" y="0.04" />
+                            <point x="1" y="0.5" />
+                            <point x="0.985366" y="0.96" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0146341" y="0.96" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\restart.png">
+                        <collision-poly>
+                            <point x="0.0146341" y="0.04" />
+                            <point x="0.5" y="0" />
+                            <point x="0.985366" y="0.04" />
+                            <point x="1" y="0.5" />
+                            <point x="0.985366" y="0.96" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0146341" y="0.96" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_Home" sid="231878879620163">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528531528183688" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\home1.png">
+                        <collision-poly>
+                            <point x="0.0599002" y="0.0599002" />
+                            <point x="0.499168" y="0" />
+                            <point x="0.941764" y="0.0582363" />
+                            <point x="1" y="0.499168" />
+                            <point x="0.9401" y="0.9401" />
+                            <point x="0.499168" y="0.998336" />
+                            <point x="0.0599002" y="0.9401" />
+                            <point x="0.00166389" y="0.499168" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\Home.png">
+                        <collision-poly>
+                            <point x="0.0599002" y="0.0599002" />
+                            <point x="0.499168" y="0" />
+                            <point x="0.941764" y="0.0582363" />
+                            <point x="1" y="0.499168" />
+                            <point x="0.9401" y="0.9401" />
+                            <point x="0.499168" y="0.998336" />
+                            <point x="0.0599002" y="0.9401" />
+                            <point x="0.00166389" y="0.499168" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_Sound" sid="784715294164874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="988156693234890" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\playSound.png">
+                        <collision-poly>
+                            <point x="0.0599002" y="0.0599002" />
+                            <point x="0.499168" y="0.00166389" />
+                            <point x="0.9401" y="0.0599002" />
+                            <point x="0.998336" y="0.499168" />
+                            <point x="0.9401" y="0.9401" />
+                            <point x="0.499168" y="1" />
+                            <point x="0.0582363" y="0.941764" />
+                            <point x="0" y="0.499168" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\mute1.png">
+                        <collision-poly>
+                            <point x="0.0583333" y="0.0583333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.941667" y="0.0583333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.941667" y="0.941667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0583333" y="0.941667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="133675614231917">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="backgroundSore" sid="189434241959314">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155934482422314" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\BelajarGAME\proOne\Background\backgroundSore.png">
+                        <collision-poly>
+                            <point x="0.000877963" y="0.00156006" />
+                            <point x="0.999122" y="0.00156006" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="awanSore" sid="506561847835437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="683802090219663" speed="5">
+                    <frame duration="1" hotspotX="0.500439" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\Background\awanSore.png">
+                        <collision-poly>
+                            <point x="0.0421422" y="0.125" />
+                            <point x="0.9482" y="0.153646" />
+                            <point x="0.992098" y="0.5" />
+                            <point x="0.76734" y="0.309896" />
+                            <point x="0.499561" y="0.424479" />
+                            <point x="0.1036" y="0.692708" />
+                            <point x="0.910448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gedungSore" sid="602980764552481">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="476540736524488" speed="5">
+                    <frame duration="1" hotspotX="0.500247" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\Background\gedungSore.png">
+                        <collision-poly>
+                            <point x="0.106068" y="0.408745" />
+                            <point x="0.499753" y="0.110266" />
+                            <point x="0.98076" y="0.0741445" />
+                            <point x="0.99852" y="0.994297" />
+                            <point x="0.00049334" y="0.998099" />
+                            <point x="0.0123335" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sky_dark" sid="358205566906788">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767396970445947" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\BelajarGAME\asset_gratis\sky_dark.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gedungMalam" sid="488725761311111">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475724480759323" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500967" original-source="D:\BelajarGAME\proOne\Background\gedungMalam.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.0773694" />
+                            <point x="0.980732" y="0.0773694" />
+                            <point x="0.999518" y="0.499033" />
+                            <point x="0.995183" y="0.980658" />
+                            <point x="0.000481696" y="0.998066" />
+                            <point x="0.0144509" y="0.499033" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="awanMalam" sid="819236843576100">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="442928641463968" speed="5">
+                    <frame duration="1" hotspotX="0.500439" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\Background\awanMalam.png">
+                        <collision-poly>
+                            <point x="0.0421422" y="0.125" />
+                            <point x="0.9482" y="0.153646" />
+                            <point x="0.992098" y="0.5" />
+                            <point x="0.76734" y="0.309896" />
+                            <point x="0.499561" y="0.424479" />
+                            <point x="0.1036" y="0.692708" />
+                            <point x="0.910448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CovidIjo" sid="241617793608679">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="612854271548781">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="227588038052615">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396209283486520" speed="5">
+                    <frame duration="1" hotspotX="0.503356" hotspotY="0.503356" original-source="D:\BelajarGAME\proOne\objek\Covid19-3.png">
+                        <collision-poly>
+                            <point x="0.181208" y="0.181208" />
+                            <point x="0.496644" y="0.0134228" />
+                            <point x="0.812081" y="0.187919" />
+                            <point x="0.979866" y="0.496644" />
+                            <point x="0.812081" y="0.812081" />
+                            <point x="0.496644" y="0.973154" />
+                            <point x="0.187919" y="0.812081" />
+                            <point x="0.0201342" y="0.496644" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CovidIjoFLy" sid="943018983159787">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="445614292020753">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="408213830897774">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636689650447357" speed="5">
+                    <frame duration="1" hotspotX="0.503356" hotspotY="0.503356" original-source="D:\BelajarGAME\proOne\objek\Covid19-3.png">
+                        <collision-poly>
+                            <point x="0.181208" y="0.181208" />
+                            <point x="0.496644" y="0.0134228" />
+                            <point x="0.812081" y="0.187919" />
+                            <point x="0.979866" y="0.496644" />
+                            <point x="0.812081" y="0.812081" />
+                            <point x="0.496644" y="0.973154" />
+                            <point x="0.187919" y="0.812081" />
+                            <point x="0.0201342" y="0.496644" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="738568626947729">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643659715966940" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="play" sid="535359679696770">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="438802789649279" speed="5">
+                    <frame duration="1" hotspotX="0.500406" hotspotY="0.501109" original-source="D:\BelajarGAME\proOne\GUI\play.png">
+                        <collision-poly>
+                            <point x="0.0146223" y="0.0399113" />
+                            <point x="0.499594" y="0" />
+                            <point x="0.985378" y="0.0399113" />
+                            <point x="1" y="0.498891" />
+                            <point x="0.985378" y="0.960089" />
+                            <point x="0.499594" y="0.997783" />
+                            <point x="0.0146223" y="0.960089" />
+                            <point x="0.000812348" y="0.498891" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="play2" sid="582016428796904">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425116042909158" speed="5">
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.505155" original-source="D:\BelajarGAME\proOne\GUI\play1.png">
+                        <collision-poly>
+                            <point x="0.0146341" y="0.04" />
+                            <point x="0.5" y="0" />
+                            <point x="0.985366" y="0.04" />
+                            <point x="1" y="0.5" />
+                            <point x="0.985366" y="0.96" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0146341" y="0.96" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.505155" original-source="D:\BelajarGAME\proOne\GUI\play.png">
+                        <collision-poly>
+                            <point x="0.0154096" y="0.0419426" />
+                            <point x="0.499594" y="0.00220751" />
+                            <point x="0.98459" y="0.0419426" />
+                            <point x="0.999189" y="0.498896" />
+                            <point x="0.98459" y="0.958057" />
+                            <point x="0.499594" y="0.995585" />
+                            <point x="0.0154096" y="0.958057" />
+                            <point x="0.00162206" y="0.498896" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="judul" sid="572675002654899">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843380517720746" speed="5">
+                    <frame duration="1" hotspotX="0.500888" hotspotY="0.5" original-source="D:\BelajarGAME\proOne\GUI\judul.png">
+                        <collision-poly>
+                            <point x="0.0053286" y="0.0319149" />
+                            <point x="0.499112" y="0.212766" />
+                            <point x="0.966252" y="0.202128" />
+                            <point x="0.998224" y="0.5" />
+                            <point x="0.959147" y="0.755319" />
+                            <point x="0.499112" y="0.744681" />
+                            <point x="0.062167" y="0.62766" />
+                            <point x="0.0017762" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="892961285355470">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Text3" sid="296765997050900">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="kontrol" plugin-id="Sprite" sid="333795675428725">
+            <members>
+                <member>btn_attack</member>
+                <member>btn_jump</member>
+                <member>btn_left</member>
+                <member>btn_right</member>
+                <member>btn_up</member>
+            </members>
+        </family>
+        <family name="tombol" plugin-id="Sprite" sid="752119685150456">
+            <members>
+                <member>btn_next</member>
+                <member>restart</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>1.xml</layout>
+        <layout>2.xml</layout>
+        <layout>3.xml</layout>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>E1.xml</event-sheet>
+        <event-sheet>E2.xml</event-sheet>
+        <event-sheet>E3.xml</event-sheet>
+        <event-sheet>eMenu.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+        <global-instance type="Mouse" uid="14" />
+        <global-instance type="Touch" uid="23">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="78">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="215" />
+    </global-instances>
+    <sounds-folder>
+        <file name="hurt_loro.m4a" />
+        <file name="hurt_loro.ogg" />
+        <file name="sprayFinal.m4a" />
+        <file name="sprayFinal.ogg" />
+        <file name="benar2.m4a" />
+        <file name="benar2.ogg" />
+        <file name="salahtenan.m4a" />
+        <file name="salahtenan.ogg" />
+        <file name="menangFix.m4a" />
+        <file name="menangFix.ogg" />
+        <file name="Kalah_FIX.m4a" />
+        <file name="Kalah_FIX.ogg" />
+        <file name="klik.m4a" />
+        <file name="klik.ogg" />
+        <file name="backsound.m4a" />
+        <file name="backsound.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
